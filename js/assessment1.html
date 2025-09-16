@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo img {
+
+            border-radius: 70%;
+            height: 80px;
+        }
+
+        #header {
+            width: 600px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            background-color: antiquewhite;
+            margin-left: 450px;
+            margin-top: 100px;
+            border: 2px solid black;
+        }
+
+        .counter h1 {
+            margin-left: 200px;
+        }
+
+        #display {
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            margin-top: 200px;
+            margin-right: 2px;
+            border-radius: 40%;
+        }
+
+        .buttons {
+            margin-top: 200px;
+        }
+        
+        </style>
+
+</head>
+
+<body>
+    <div id="bapp">
+        <div id="header">
+            <div class="logo"><img
+                    src="https://yt3.googleusercontent.com/ATJuCH36wHPiFwumVBm423ouLVGQtq2pkPMOlSCclqqXErazOWyl4n07MRmbFnSJTL5P02Fq=s900-c-k-c0x00ffffff-no-rj"
+                    alt=""></div>
+            <div class="counter">
+                <h1>Counter App</h1>
+            </div>
+
+            <div id="display">
+                <h3 id="number">0</h3>
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="aaa" onclick="add()">
+                    <h3>add</h3>
+                </button>
+                <button class="btn" id="bbb" onclick="minus()">
+                    <h3>minus</h3>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        var count = 0;
+        function add() {
+            if (count < 10) {
+                count += 1;
+                document.getElementById("number").innerHTML = count;
+            } else {
+                alert("maximum value reached");
+            }
+        }
+        function minus() {
+            if (count > 0) {
+                count -= 1;
+                document.getElementById("number").innerHTML = count;
+            } else {
+                alert("minimum value reached");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
