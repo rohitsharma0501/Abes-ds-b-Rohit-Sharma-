@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Image on Click</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+      transition: 0.3s ease-in-out;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the Button to Change the Image</h2>
+
+  <img id="myImage" src="https://via.placeholder.com/300?text=Image+1" alt="Image 1">
+
+  <br>
+
+  <button onclick="changeImage()">Change Image</button>
+
+  <script>
+    let isFirstImage = true;
+
+    function changeImage() {
+      const image = document.getElementById("myImage");
+
+      if (isFirstImage) {
+        image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dPwooTSiiLpk_YizIjZWNFmUvznHypuPmQ&s";
+        image.alt = "Image 2";
+      } else {
+        image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVvgw1h_tYxtNoWd-ndnjIbtIw9EyiwjWhA&s";
+        image.alt = "Image 1";
+      }
+
+      isFirstImage = !isFirstImage;
+    }
+  </script>
+
+</body>
+</html>

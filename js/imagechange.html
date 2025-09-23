@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Image</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the Button to Hide/Show the Image</h2>
+
+  <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSzP99JiPtAe7QyANEFNk5OPuzsLbF9g-zTw&s" alt="Sample Image">
+
+  <br>
+
+  <button onclick="toggleImage()">Hide Image</button>
+
+  <script>
+    function toggleImage() {
+      const image = document.getElementById("myImage");
+      const button = document.querySelector("button");
+
+      if (image.style.display === "none") {
+        image.style.display = "block";
+        button.textContent = "Hide Image";
+      } else {
+        image.style.display = "none";
+        button.textContent = "Show Image";
+      }
+    }
+  </script>
+
+</body>
+</html>
