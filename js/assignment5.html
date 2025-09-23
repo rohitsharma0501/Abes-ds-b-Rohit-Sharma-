@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+        .card1,
+        .card2 {
+            height: 400px;
+            width: 400px;
+            background-color: beige ;   
+            border: 1px solid black;
+
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card1 {
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        .card2 {
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .card .card1 p{
+            margin-left: 150px;
+        }
+        .card .card1 h2{
+            margin-left: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card1">
+            <h2 id="heading"></h2>
+            <p id="name"></p>
+            <p id="class"></p>
+            <p id="branch"></p>
+            <p id="rollno"></p>
+
+        </div>
+        <div class="card2">
+            <h2 id="heading"></h2>
+            <p id="name"></p>
+            <p id="class"></p>
+            <p id="branch"></p>
+            <p id="rollno"></p>
+
+        </div>
+
+    </div>
+    <script>
+        const student1 = new Object({
+            name: "shubham",
+            class: "B.tech",
+            branch: "IT",
+            rollno: "2300321540155"
+        })
+        const student2 = new Object({
+            name: "shubham chaufdhary",
+            class: "B.tech",
+            branch: "IT",
+            rollno: "2300321540155"
+        })
+        const student3 = new Object({
+            name: "shubham mishra",
+            class: "B.tech",
+            branch: "IT",
+            rollno: "2300321540155"
+        })
+        const student4 = new Object({
+            name: "shubham tomar",
+            class: "B.tech",
+            branch: "CSE",
+            rollno: "2300321540155"
+        })
+        const student5 = new Object({
+            name: "shubham upadhyay",
+            class: "B.tech",
+            branch: "CS",
+            rollno: "2300321540155"
+        });
+        document.getElementById("heading").innerHTML = "IT Students";
+        document.getElementById("name").innerHTML = student1.name;
+        document.getElementById("class").innerHTML = student1.class;
+        document.getElementById("branch").innerHTML = student1.branch;
+        document.getElementById("rollno").innerHTML = student1.rollno;
+    </script>
+
+</body>
+
+</html>
