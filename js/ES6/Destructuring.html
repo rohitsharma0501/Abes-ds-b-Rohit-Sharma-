@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>De Structuring</title>
+</head>
+<body>
+    <p id="adi"></p>
+    <script>
+        const person = {
+            firstname:"Rohit",
+            lastname:"Sharma",
+            age:25
+        };
+        // document.getElementById("adi").innerHTML=person.lastname ;
+        // document.getElementById("adi").innerHTML=person.age ;
+
+        let {age,firstname,lastname}= person ;   //destruncturingg<=
+        document.getElementById("adi").innerHTML=lastname ;
+        
+    </script>
+</body>
+</html>
