@@ -8,8 +8,22 @@
         const arr1=[1,2,3] ;
         const arr2=[4,5,6] ;
 
-        let result = [...arr1, ...arr2] ;
+    const result = [...arr1, ...arr2] ;
         document.writeln(result) ;
+
+        const obj1={
+            name:"Rohit",
+            age:25
+        } ;
+        const obj2={
+            lastname:"Sharma",
+            city:"Mumbai"
+        } ;
+        const ans = {...obj1, ...obj2} ;
+        document.writeln("<br>"+ans.name) ;
+        document.writeln("<br>"+ans.age) ;
+        document.writeln("<br>"+ans.lastname) ;
+        document.writeln("<br>"+ans.city) ;
 
     </script>
 </body>
