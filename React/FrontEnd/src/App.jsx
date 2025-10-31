@@ -1,15 +1,16 @@
-import { useState } from 'react'
-
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Card from './components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>vhhf</h1>
-    </>
+    <div>
+      <Card/  >
+      <br />
+      <Card/  >
+      <br />
+      <Card/  >
+      
+    </div>
   )
 }
 
