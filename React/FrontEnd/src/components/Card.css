@@ -1,6 +1,5 @@
 #card{
-    border:5px solid red ;
-    height: 500px;
+    border: 5px solid red;
+    height: 400px;
     width: 300px;
-    /* margin-top: 170px; */
 }

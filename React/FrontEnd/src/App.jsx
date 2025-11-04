@@ -1,16 +1,23 @@
 import React from 'react'
 import Card from './components/Card'
 import Navbar from './components/Navbar'
+import "./app.css"
+import Count1 from './components/Count1'
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Card/  >
+      {/* <Navbar/>
+      <div id="container">
+        <Card name="rohit" edu="pre nur"/  >
       <br />
-      <Card/  >
+      <Card name="rohit sharma" edu="10th" /  >
       <br />
-      <Card/  >
+      <Card name="dubey ji ka beta" edu="nalla berojgar"/  >
+        
+      </div> */}
+      <Count1/>
+      
       
     </div>
   )
