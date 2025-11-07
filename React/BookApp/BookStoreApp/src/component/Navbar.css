@@ -1,0 +1,20 @@
+#nav{
+    display: flex;
+    border:2px solid black ;
+     height: 70px ;
+     width: 100% ;
+     align-items: center ;
+     background: #000;
+}
+#nav span{
+    display: flex;
+    justify-content: center;
+    margin-left:20px ;
+    color: white ;
+    line-height: 70px;
+    width: 80px;
+} 
+
+#nav span:hover{
+    background: red; ;
+}

@@ -1,0 +1,13 @@
+#book {
+        border: 2px solid;
+        box-shadow: 5px 5px 10px grey;
+        width: 19vw;
+        height: 55vh;
+}
+
+#book h1, img,button {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    
